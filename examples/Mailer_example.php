@@ -20,7 +20,18 @@ require_once(dirname(__FILE__) . '/../classes/Mailer.php');
 $body = 'This is body of our letter.';
 
 /**
- * Send email
+ * Create copy of Mailer object
  */
-new Mailer($body);
+$object = new Mailer();
+
+/**
+ * Sent email
+ */
+//$object -> sentEmail($body)
+
+if ($object -> emailSent($body)) {
+	echo 'Email was sent.';
+} else {
+	echo 'Email does not sent.';
+}
 ?>

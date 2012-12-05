@@ -12,7 +12,7 @@
 /**
  * Mailer
  *
- * This class send email.
+ * This class sent email.
  *
  * @version 1.0
  */
@@ -68,20 +68,20 @@ final class Mailer {
 	private $_headers;
 
 	/**
-	 * Constructor
+	 * emailSent
 	 * 
-	 * This constructor initialize email send
+	 * This function sent email 
 	 * 
 	 * @param string 	$body
 	 * @return boolean	$mailer
 	 */
-	public function __construct($body) {
+	public function emailSent($body) {
 
 		/**
 		 * Send email
 		 */	
 		$mailer = ($this -> emailValidate()) ? mail($this -> _to_email, $this -> _subject, $body, $this -> addHeader()) : false;
-		
+
 		return $mailer;
 	}
 
