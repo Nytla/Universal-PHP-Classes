@@ -1,12 +1,10 @@
 <?php
 /**
- * Adress Book Controller
- * 
  * Exceptionizer.php
  *
  * This is exceptions file
  * 
- * @category	controllers
+ * @category	classes
  * @copyright	2012
  * @author	Igor Zhabskiy <Zhabskiy.Igor@gmail.com>
  */
