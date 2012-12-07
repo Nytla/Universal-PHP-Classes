@@ -29,7 +29,6 @@ final class TestingLoading {
 	 * __construct
 	 * 
 	 * This function initialize microtime 
-	 *
 	 */
 	public function __construct() {
 		
@@ -39,8 +38,9 @@ final class TestingLoading {
 	/**
 	 * calculateAndPrintInfo
 	 * 
+	 * This class calculate and print information about script loading
 	 * 
-	 *
+	 * @return string $content
 	 */
 	public function calculateAndPrintInfo() {
 
