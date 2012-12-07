@@ -4,9 +4,9 @@
  *
  * This is file with mailer class
  *
- * @category classes
- * @copyright 2012
- * @author Igor Zhabskiy <Zhabskiy.Igor@gmail.com>
+ * @category	classes
+ * @copyright	2012
+ * @author		Igor Zhabskiy <Zhabskiy.Igor@gmail.com>
  */
 
 /**

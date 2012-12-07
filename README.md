@@ -10,6 +10,7 @@ This is my collection universal classes of php.
 * [Mailer.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Mailer.php) - this class send email, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Mailer_example.php)
 * [PDOMysqlConnect.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/PDOMysqlConnect.php) - this class connect to MYSQL (use PDO driver), You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/PDOMysqlConnect_example.php)
 * [Redirect.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Redirect.php) - this class redirects, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Redirect_example.php)
+* [TestingLoading.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/TestingLoading.php) - this class testing loading your scripts, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/TestingLoading_example.php)
 * [ValidateData.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/ValidateData.php) - this class validate data (boolean, email, float, integer, ip, url, string (login or password)), You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/ValidateData_example.php)
 
 ##Have comments or suggestions?

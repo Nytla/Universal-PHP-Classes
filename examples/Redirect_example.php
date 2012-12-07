@@ -4,9 +4,9 @@
  *
  * This is file with example for redirect class
  *
- * @category examples
- * @copyright 2012
- * @author Igor Zhabskiy <Zhabskiy.Igor@gmail.com>
+ * @category	examples
+ * @copyright	2012
+ * @author		Igor Zhabskiy <Zhabskiy.Igor@gmail.com>
  */
 
 /**
