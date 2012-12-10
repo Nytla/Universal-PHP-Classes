@@ -90,15 +90,12 @@ final class ZipFileCreator extends ZipArchive {
 			return false;
 		}
 	}
-	
+
 	/**
 	 * Destructor
 	 *
 	 * This function is destructor
 	 */
-	public function __destruct() {
-		
-			
-	}
+	public function __destruct() {}
 }
 ?>
