@@ -74,9 +74,9 @@ $ip = '127.0.0.1';
 //ValidateData::filterValidate($ip, ValidateData::DATA_IP);
 
 if (ValidateData::filterValidate($ip, ValidateData::DATA_IP)) {
-	echo 'IP is validated. <br>';
+	echo 'IP address is validated. <br>';
 } else {
-	echo 'IP is not validated. <br>';
+	echo 'IP address is not validated. <br>';
 }
 
 /**
