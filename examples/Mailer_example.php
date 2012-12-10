@@ -27,7 +27,7 @@ $object = new Mailer();
 /**
  * Sent email
  */
-//$object -> sentEmail($body)
+//$object -> sentEmail($body);
 
 if ($object -> emailSent($body)) {
 	echo 'Email was sent.';

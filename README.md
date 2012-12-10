@@ -5,6 +5,7 @@ This is my collection universal classes of php.
 * PHP since v5.0
 
 ##Contents of the collection (alphabetically)
+* [AutoloadClass.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/AutoloadClass.php) - this class autoload classes, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/AutoloadClass_example.php)
 * [Cookie.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Cookie.php) - this class work with cookie (set, check, delete), You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Cookie_example.php)
 * [Exceptionizer.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Exceptionizer.php) - this class work with exceptions, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Exceptionizer_example.php)
 * [Mailer.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Mailer.php) - this class send email, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Mailer_example.php)

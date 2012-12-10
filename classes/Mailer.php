@@ -23,7 +23,7 @@ final class Mailer {
 	 *
 	 * @var string
 	 */
-	private $_to_email = 'astamyr@mail.ru';
+	private $_to_email = 'example@domain.com';
 
 	/**
 	 * _from_email
