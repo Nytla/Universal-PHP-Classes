@@ -2,7 +2,7 @@
 /**
  * PDOMysqlConnect.php
  *
- * This is PDO MYSQL file
+ * This is file with PDOMysqlConnect class
  * 
  * @category	classes
  * @copyright	2012

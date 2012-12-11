@@ -2,7 +2,7 @@
 /**
  * ValidateData.php
  *
- * This is validate data file
+ * This is file with ValidateData class
  * 
  * @category	classes
  * @copyright	2012
@@ -12,7 +12,7 @@
 /**
  * ValidateData
  * 
- * This is administrator validate data class
+ * This class validate data
  * 
  * @version 0.1
  */

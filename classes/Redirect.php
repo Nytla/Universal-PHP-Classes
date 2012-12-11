@@ -2,7 +2,7 @@
 /**
  * Redirect.php
  *
- * This is redirect URI 
+ * This is file with Redirect class
  * 
  * @category	classes
  * @copyright	2012

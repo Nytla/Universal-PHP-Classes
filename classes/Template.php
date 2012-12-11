@@ -12,7 +12,7 @@
 /**
  * Template
  * 
- * This is Template class
+ * This class render template
  * 
  * @version 0.1
  */

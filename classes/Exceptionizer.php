@@ -2,7 +2,7 @@
 /**
  * Exceptionizer.php
  *
- * This is exceptions file
+ * This is file with Exceptionizer class
  * 
  * @category	classes
  * @copyright	2012
@@ -12,7 +12,7 @@
 /**
  * Exceptionizer
  * 
- * This is exceptions class
+ * This is class work with exceptions
  * 
  * @version 0.1
  */

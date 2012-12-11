@@ -2,7 +2,7 @@
 /**
  * AutoloadClass.php
  *
- * This file with autoload file
+ * This is file with autoload class
  * 
  * @category	classes
  * @copyright	2012
@@ -12,7 +12,7 @@
 /**
  * ClassAutoloader
  * 
- * This is autoload class
+ * This is autoload other class
  * 
  * @version 0.1
  */

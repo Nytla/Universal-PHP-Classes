@@ -2,7 +2,7 @@
 /**
  * Mailer.php
  *
- * This is file with mailer class
+ * This is file with Mailer class
  *
  * @category	classes
  * @copyright	2012

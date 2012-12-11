@@ -2,7 +2,7 @@
 /**
  * ZipFileCreator.php
  *
- * This file with zip file creator class 
+ * This file with ZipFileCreator class 
  * 
  * @category	classes
  * @copyright	2012
@@ -12,7 +12,7 @@
 /**
  * ZipFileCreator
  * 
- * This is autoload zip file creator class
+ * This class create zip file
  * 
  * @version 0.1
  */

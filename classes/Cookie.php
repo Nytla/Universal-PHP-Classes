@@ -2,7 +2,7 @@
 /**
  * Cookie.php
  *
- * This is cookie file
+ * This is file with cookie class
  * 
  * @category	classes
  * @copyright	2012
@@ -12,7 +12,7 @@
 /**
  * Cookie
  * 
- * This is cookie class
+ * This class work with cookie
  * 
  * @version 0.1
  */
