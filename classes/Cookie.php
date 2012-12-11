@@ -2,7 +2,7 @@
 /**
  * Cookie.php
  *
- * This is file with cookie class
+ * This is file with Cookie class
  * 
  * @category	classes
  * @copyright	2012
@@ -117,6 +117,7 @@ final class Cookie {
 	 * @param mixed $expiry
 	 * @param string $path
 	 * @param string $domain
+	 * 
 	 * @return bool
 	 */
 	static public function set($name, $value, $expiry = self::ONE_YEAR, $path = '/', $domain = false) {

@@ -12,7 +12,7 @@
 /**
  * Exceptionizer
  * 
- * This is class work with exceptions
+ * This class work with exceptions
  * 
  * @version 0.1
  */
