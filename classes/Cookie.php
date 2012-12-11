@@ -100,6 +100,7 @@ final class Cookie {
 	 *
 	 * @param string $name
 	 * @param string $default
+	 * 
 	 * @return mixed
 	 */
 	static public function get($name, $default = '') {
@@ -155,6 +156,7 @@ final class Cookie {
 	 * @param string $path
 	 * @param string $domain
 	 * @param bool $remove_from_global Set to true to remove this cookie from this request.
+	 * 
 	 * @return bool
 	*/
 	static public function delete($name, $path = '/', $domain = false) {

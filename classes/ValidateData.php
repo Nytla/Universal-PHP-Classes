@@ -97,6 +97,7 @@ final class ValidateData {
 	 * @param (boolean, email, float, integer, ip, url, string) $data
 	 * @param string $filter_type
 	 * @param array $regex_array
+	 * 
 	 * @return string / boolean
 	 */
 	static public function filterValidate($data, $filter_type, $regex_array = '') {
