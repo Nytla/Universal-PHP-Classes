@@ -16,7 +16,11 @@
  * 
  * @version 0.1
  */
+<<<<<<< HEAD
 final class FriendlyUrl {
+=======
+class FriendlyUrl {
+>>>>>>> f5f244f314862df7367e5308e03c0ae5741639dd
 	
 	/**
 	 * Takes the input, scrubs bad characters
@@ -28,7 +32,11 @@ final class FriendlyUrl {
 	 * 
 	 * @return string
 	 */
+<<<<<<< HEAD
 	public function generateSeoLink	($input, $separator = '-', $words_array = array(), $remove_words = true) {
+=======
+	public function generateSeoLink($input, $separator = '-', $words_array = array(), $remove_words = true) {
+>>>>>>> f5f244f314862df7367e5308e03c0ae5741639dd
 
 		/**
 		 * Make it lowercase
@@ -68,7 +76,11 @@ final class FriendlyUrl {
 	 * 
 	 * @return string
 	 */
+<<<<<<< HEAD
 	private function removeWords($input, $separator, $words_array = array(), $unique_words = true) {
+=======
+	public function removeWords($input, $separator, $words_array = array(), $unique_words = true) {
+>>>>>>> f5f244f314862df7367e5308e03c0ae5741639dd
 
 		/**
 		 * Separate all words based on spaces
