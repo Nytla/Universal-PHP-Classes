@@ -10,7 +10,7 @@
  */
 
 /**
- * Require file with redirect class
+ * Require file with Redirect class
  */
 require_once(dirname(__FILE__) . '/../classes/Redirect.php');
 

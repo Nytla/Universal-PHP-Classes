@@ -10,7 +10,7 @@
  */
 
 /**
- * Require file with cookie class
+ * Require file with Cookie class
  */
 require_once(dirname(__FILE__) . '/../classes/Cookie.php');
 

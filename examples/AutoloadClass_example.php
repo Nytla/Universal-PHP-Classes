@@ -10,7 +10,7 @@
  */
 
 /**
- * Require file with mailer class
+ * Require file with AutoloadClass class
  */
 require_once(dirname(__FILE__) . '/../classes/AutoloadClass.php');
 

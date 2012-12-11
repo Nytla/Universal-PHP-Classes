@@ -10,7 +10,7 @@
  */
 
 /**
- * Require file with zip file creator class
+ * Require file with ZipFileCreator class
  */
 require_once(dirname(__FILE__) . '/../classes/ZipFileCreator.php');
 
