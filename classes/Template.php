@@ -69,7 +69,7 @@ final class Template {
 	 *
 	 */
 	private function parseContent($string) {
-		return preg_replace_callback("/@([[:alnum:]]+)@/", array($this, 'setParameters'), $string);
+		return preg_replace_callback("/{([[:alnum:]]+)}/", array($this, 'setParameters'), $string);
 	}
 
 	/**

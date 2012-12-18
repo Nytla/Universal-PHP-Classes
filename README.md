@@ -1,4 +1,4 @@
-# Universal-PHP-Classes
+# Universal PHP Classes
 This is my collection universal classes of php.
 
 ##The technologies used

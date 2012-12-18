@@ -23,35 +23,28 @@ final class Mailer {
 	 *
 	 * @var string
 	 */
-	private $_to_email = 'example@domain.com';
+	private $_to_email = '';
 
 	/**
 	 * _from_email
 	 *
 	 * @var string
 	 */
-	private $_from_email = 'john@mailer.com';
+	private $_from_email = '';
 
 	/**
 	 * _from_name
 	 *
 	 * @var string
 	 */
-	private $_from_name = 'John Doe';
+	private $_from_name = '';
 
 	/**
 	 * _subject
 	 *
 	 * @var string
 	 */
-	private $_subject = 'This is subject';
-
-	/**
-	 * _encoding
-	 *
-	 * @var string
-	 */
-	private $_encoding = 'utf-8';
+	private $_subject = '';
 
 	/**
 	 * _mime_version
@@ -59,6 +52,20 @@ final class Mailer {
 	 * @var string
 	 */
 	private $_mime_version = '1.0';
+	
+	/**
+	 * _encoding
+	 *
+	 * @var string	It can be: UTF-8, ISO-8859-1, Windows-1251, KOI8-r, cp866
+	 */
+	private $_encoding = 'iso-8859-1';
+
+	/**
+	 * _content_type
+	 *
+	 * @var string	It can be: "text/plain;", "text/html;", "image/png;", "image/gif;", "video/mpeg;", "text/css;", and "audio/basic;"
+	 */
+	private $_content_type = 'text/html;';
 
 	/**
 	 * _headers
@@ -75,13 +82,23 @@ final class Mailer {
 	 * @param string 	$body
 	 * @return boolean	$mailer
 	 */
-	public function emailSent($body) {
+	public function emailSent($to_email, $from_email, $from_name, $subject, $body) {
 
 		/**
 		 * Send email
 		 */	
-		$mailer = ($this -> emailValidate()) ? mail($this -> _to_email, $this -> _subject, $body, $this -> addHeader()) : false;
+//		$mailer = ($this -> emailValidate()) ? mail($this -> _to_email, $this -> _subject, $body, $this -> addHeader()) : false;
 
+		$this -> _to_email = $to_email;
+		
+		$this -> _from_email = $from_email;
+		
+		$this -> _from_name = $from_name;
+		
+		$this -> _subject = $subject;
+
+		$mailer = ($this -> emailValidate()) ? mail($to_email, $subject, $body, $this -> addHeader()) : false;
+		
 		return $mailer;
 	}
 
@@ -138,9 +155,9 @@ final class Mailer {
 	private function addHeader() {
 
 		$this -> _headers  = "MIME-Version: " . $this -> _mime_version . "\r\n";
+		$this -> _headers .= "Content-Type: " . $this -> _content_type . " charset=" . $this -> _encoding . "\r\n";
 		$this -> _headers .= "From: " . $this -> _from_name . " <" . $this -> _from_email . ">\r\n";
-		$this -> _headers .= "Reply-To: " . $this -> _from_email . "\r\n";
-		$this -> _headers .= "Content-Type: text/plain; charset=" . $this -> _encoding . "\r\n";
+		$this -> _headers .= "Reply-To: " . $this -> _from_email . "\r\n";			
 		$this -> _headers .= "X-Mailer: PHP/" . phpversion();
 
 		return $this -> _headers;
