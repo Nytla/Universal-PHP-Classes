@@ -76,6 +76,7 @@ final class StringWork {
 	 *
 	 * @param string	$string
 	 * @param array		$replace_array
+	 * 
 	 * @return string	$result
 	 */
 	static public function parseAndReplaceString($string, $replace_array) {
@@ -146,6 +147,7 @@ final class StringWork {
 	 *
 	 * @param string	$text
 	 * @param integer	$length
+	 * 
 	 * @return string	$short_text
 	 */
 	static public function shortenLongText($text, $length = 32) {
@@ -175,7 +177,7 @@ final class StringWork {
 		/**
 		 * Return short text
 		 */
-		return $text;
+		return $short_text;
 	}
 
 	/**
@@ -225,3 +227,4 @@ final class StringWork {
 	 */
 	public function __destruct() {}
 }
+?>

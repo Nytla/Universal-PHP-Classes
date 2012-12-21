@@ -1,8 +1,8 @@
 <?php
 /**
- * AutoloadClass_example.php
+ * StringWork_example.php
  *
- * This is file with example for autoload class
+ * This is file with example for StringWork class
  *
  * @category	examples
  * @copyright	2012
@@ -10,7 +10,7 @@
  */
 
 /**
- * Require file with AutoloadClass class
+ * Require file with StringWork class
  */
 require_once(dirname(__FILE__) . '/../classes/StringWork.php');
 
@@ -32,7 +32,7 @@ $string = 'This is example string with µСЃР°В вЂ“ none ACII.';
 /**
  * Remove none ACII from our string
  */
-//print StringWork::RemoveNoneASCIIFromString($string);
+//print StringWork::removeNoneASCIIFromString($string);
 
 /**
  * Set string with example content
@@ -79,31 +79,6 @@ $length = 32;
 //print StringWork::shortenLongText($long_text, $length);
 
 /**
- * Set variable with url
- */
-$url = 'http://graph.facebook.com/btaylor';
-
-/**
- * Print data (CURL)
- */
-//print_r(StringWork::getJSONDataFromURLCURL($url));
-
-/**
- * Print user name (CURL)
- */
-//print_r(StringWork::getJSONDataFromURLCURL($url) -> name);
-
-/**
- * Print data (file_get_contents)
- */
-//print_r(StringWork::getJSONDataFromURL($url));
-
-/**
- * Print user name (file_get_contents)
- */
-//print_r(StringWork::getJSONDataFromURL($url) -> name);
-
-/**
  * Set key
  */
 $key = 'password';
@@ -111,7 +86,7 @@ $key = 'password';
 /**
  * Set login
  */
-$password = 'my_example_pass';
+$password = 'example_password';
 
 /**
  * Set variable with flag (1 = decrypt, 0 = encrypt)
@@ -121,9 +96,10 @@ $flag = 0;
 /**
  * Encrypt password
  */
-//print StringWork::encryptOrDecrypt($key, $password, $flag);
+//print StringWork::encryptOrDecryptString($key, $password, $flag);
 
 /**
  * Decrypt password
  */
-print StringWork::encryptOrDecrypt($key, StringWork::encryptOrDecrypt($key, $password, $flag), 1);
+print StringWork::encryptOrDecryptString($key, StringWork::encryptOrDecryptString($key, $password, $flag), 1);
+?>
