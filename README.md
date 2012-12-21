@@ -19,6 +19,6 @@ This is my collection universal classes of php.
 * [TestingLoading.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/TestingLoading.php) - this class to testing loading your scripts, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/TestingLoading_example.php)
 * [ValidateData.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/ValidateData.php) - this class to validate data (boolean, email, float, integer, ip, url, login, password), You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/ValidateData_example.php)
 * [ZipFileCreator.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/ZipFileCreator.php) - this class to create zip archive, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/ZipFileCreator_example.php)
-
+	
 ##Have comments or suggestions?
 Create [Issue](https://github.com/Nytla/Universal-PHP-Classes/issues).
