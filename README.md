@@ -1,4 +1,4 @@
-# Universal PHP Classes
+#Universal PHP Classes
 This is my collection universal classes of php.
 
 ##The technologies used
@@ -8,6 +8,7 @@ This is my collection universal classes of php.
 * [AutoloadClass.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/AutoloadClass.php) - this class autoload classes, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/AutoloadClass_example.php)
 * [Cookie.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Cookie.php) - this class work with cookie (set, check, delete), You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Cookie_example.php)
 * [Exceptionizer.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Exceptionizer.php) - this class work with exceptions, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Exceptionizer_example.php)
+* [FilesWork.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/FilesWork.php) - this class to work with files, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/FilesWork_example.php)
 * [FriendlyUrl.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/FriendlyUrl.php) - this class create friendly url for SEO, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/FriendlyUrl_example.php)
 * [Mailer.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Mailer.php) - this class send email, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Mailer_example.php)
 * [PDOMysqlConnect.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/PDOMysqlConnect.php) - this class connect to MYSQL (use PDO driver), You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/PDOMysqlConnect_example.php)
