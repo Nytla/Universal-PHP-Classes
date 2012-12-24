@@ -120,7 +120,7 @@ final class StringWork {
 	
 			$new_string = preg_replace($pattern, $replacement, $new_string);
 	
-	    	/**
+			/**
 			 *  Convert all E-mail matches to appropriate HTML links
 			 */
 			$pattern = '#([0-9a-z]([-_.]?[0-9a-z])*@[0-9a-z]([-.]?[0-9a-z])*\\.';
