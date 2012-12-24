@@ -1,18 +1,18 @@
 <?php
 /**
- * StringWork.php
+ * URLWork.php
  *
- * This is file with StringWork class
+ * This is file with URLWork class
  * 
  * @category	classes
  * @copyright	2012
- * @author		Igor Zhabskiy <Zhabskiy.Igor@gmail.com>
+ * @author	Igor Zhabskiy <Zhabskiy.Igor@gmail.com>
  */
 
 /**
- * StringWork
+ * URLWork
  * 
- * This class to work with string
+ * This class to work with URL
  * 
  * @version 0.1
  */
