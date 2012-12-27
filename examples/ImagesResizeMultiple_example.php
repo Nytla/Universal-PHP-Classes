@@ -1,6 +1,6 @@
 <?php
 /**
- * SPLLibraryPrint_example.php
+ * SPLLibraryPrint_example.php.php
  *
  * This is file with example for SPLLibraryPrint class
  *
@@ -12,10 +12,10 @@
 /**
  * Require file with SPLLibraryPrint class
  */
-require_once(dirname(__FILE__) . '/../classes/SPLLibraryPrint.php');
+require_once(dirname(__FILE__) . '/../classes/imagesResizeMultiple.php');
 
 /**
  * Print all SPL classes and his methods
  */
-print_r(SPLLibraryPrint::printSLPClassesAndMethods());
+
 ?>

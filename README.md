@@ -6,6 +6,7 @@ This is my collection universal classes of php.
 
 ##Contents of the collection (alphabetically)
 * [AutoloadClass.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/AutoloadClass.php) - this class to autoload classes, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/AutoloadClass_example.php)
+* [Calendar.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Calendar.php) - this class to print calendar as an array, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Calendar_example.php)
 * [Cookie.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Cookie.php) - this class to work with cookie (set, check, delete), You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Cookie_example.php)
 * [Exceptionizer.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/Exceptionizer.php) - this class to work with exceptions, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/Exceptionizer_example.php)
 * [FilesWork.php](https://github.com/Nytla/Universal-PHP-Classes/blob/master/classes/FilesWork.php) - this class to work with files, You can see an [example](https://github.com/Nytla/Universal-PHP-Classes/blob/master/examples/FilesWork_example.php)
