@@ -125,10 +125,12 @@ final class FilesWork {
 	}
 
 	/**
-	 * Enter description here...
+	 * listAllFilesAndFolderInDirectory
+	 * 
+	 * This function list all files and folders in adjusted directory
 	 *
-	 * @param unknown_type $dir_path
-	 * @return unknown
+	 * @param string $dir_path
+	 * @return array $files_array
 	 */
 	static public function listAllFilesAndFolderInDirectory($dir_path) {
 
