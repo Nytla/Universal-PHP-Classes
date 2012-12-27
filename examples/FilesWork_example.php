@@ -39,12 +39,17 @@ $file_name = 'example.html';
  */
 //$dir_name = 'e:/some_folder/'; //Windows
 
-//$dir_name = '/home/some_folder/'; //Unix
+//$dir_name = '/home/user_name/some_folder/'; //Unix
 
 /**
  * Print array with file name
  */
 //print_r(FilesWork::listFilesInDirectory($dir_name));
+
+/**
+ * Print array with all files and folder in directory
+ */
+//print_r(FilesWork::listAllFilesAndFolderInDirectory($dir_name));
 
 /**
  * Download file

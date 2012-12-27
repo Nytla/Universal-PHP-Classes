@@ -174,15 +174,15 @@ final class PDOMysqlWork {
 					$this -> _replace[':'.$c] = $w;
 				} else {
 					
-					if(substr($w,0,2)=='<=')
+					if(substr($w, 0, 2)=='<=')
 						$eq='<=';
-					elseif(substr($w,0,2)=='>=')
+					elseif(substr($w, 0, 2)=='>=')
 						$eq='>=';
-					elseif(substr($w,0,1)=='>')
+					elseif(substr($w, 0, 1)=='>')
 						$eq='>';
-					elseif(substr($w,0,1)=='<')
+					elseif(substr($w, 0, 1)=='<')
 						$eq='<';
-					elseif(substr($w,0,1)=='!')
+					elseif(substr($w, 0, 1)=='!')
 						$eq='!=';
 					else
 						$eq='=';
@@ -190,9 +190,9 @@ final class PDOMysqlWork {
 						/**
 						 * Prep the query for PDO->prepare
 						 */
-						$this -> _sql.= $key . $eq . ':' . $c . ' && ';
+						$this -> _sql .= $key . $eq . ':' . $c . ' && ';
 			
-						$this -> _replace[':'.$c] = $w;
+						$this -> _replace[':' . $c] = $w;
 				}
 				$c++;
 			}
@@ -274,7 +274,7 @@ final class PDOMysqlWork {
 		
 			if($this -> _debug) {
 				if($e[2]) {
-					echo '<strong>ERROR:</strong>: '.$e[2];
+					echo '<strong>ERROR:</strong>: ' . $e[2];
 				} else {
 					echo '<strong>ERROR:</strong>: General Error';
 				}

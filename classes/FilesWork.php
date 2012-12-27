@@ -123,6 +123,32 @@ final class FilesWork {
 			return $array_file_name;
 		}
 	}
+
+	/**
+	 * Enter description here...
+	 *
+	 * @param unknown_type $dir_path
+	 * @return unknown
+	 */
+	static public function listAllFilesAndFolderInDirectory($dir_path) {
+
+		/**
+		 * Create iterator object
+		 */
+		$recursiv_iterator_object = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir_path), RecursiveIteratorIterator::SELF_FIRST);
+
+		/**
+		 * Write data in file
+		 */
+		foreach ($recursiv_iterator_object as $file) { 
+			$files_array[] = $file . "\r\n";
+		}
+
+		/**
+		 * Return array with files list
+		 */
+		return $files_array;
+	}
 	
 	/**
 	 * forceDownloadFile
