@@ -52,6 +52,21 @@ $file_name = 'example.html';
 //print_r(FilesWork::listAllFilesAndFolderInDirectory($dir_name));
 
 /**
+ * Set variable with file on remote server
+ */
+//$file_url = 'http://www.domain.com/somefile.jpg';
+
+/**
+ * Check file exists on remote server
+ */
+/*
+if (FilesWork::fileExistsRemotely($file_url)) {
+	echo 'File was found on the remote server.';
+} else {
+	echo 'File was not found on the remote server.';
+}
+*/
+/**
  * Download file
  */
 FilesWork::forceDownloadFile($file_name);

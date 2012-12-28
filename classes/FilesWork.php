@@ -200,7 +200,31 @@ final class FilesWork {
 			return false;
 		}
 	}
+
+	/**
+	 * fileExistsRemotely
+	 * 
+	 * This function check file exists on remote server
+	 *
+	 * @param string $file_url
+	 * @return boolean
+	 */
+	static public function fileExistsRemotely($file_url) {
 	
+		/**
+		 * Get headers from remote server
+		 */
+		$file_headers = get_headers($file_url);
+
+		/**
+		 * If header is 404 then return false else return true 
+		 */
+		if($file_headers[0] == 'HTTP/1.1 404 Not Found') {
+			return false;
+		} else {
+			return true;
+		}  
+	}
 	/**
 	 * Destructor
 	 *
