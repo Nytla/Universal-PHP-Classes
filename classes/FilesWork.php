@@ -151,7 +151,32 @@ final class FilesWork {
 		 */
 		return $files_array;
 	}
+
+	/**
+	 * fileExistsRemotely
+	 * 
+	 * This function check file exists on remote server
+	 *
+	 * @param string $file_url
+	 * @return boolean
+	 */
+	static public function fileExistsRemotely($file_url) {
 	
+		/**
+		 * Get headers from remote server
+		 */
+		$file_headers = get_headers($file_url);
+
+		/**
+		 * If header is 404 then return false else return true 
+		 */
+		if($file_headers[0] == 'HTTP/1.1 404 Not Found') {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
 	/**
 	 * forceDownloadFile
 	 * 
@@ -202,29 +227,57 @@ final class FilesWork {
 	}
 
 	/**
-	 * fileExistsRemotely
+	 * writeContentToFile
 	 * 
-	 * This function check file exists on remote server
+	 * This function write content to file
 	 *
-	 * @param string $file_url
+	 * @param string $file_name
+	 * @param string $data
+	 * 
 	 * @return boolean
 	 */
-	static public function fileExistsRemotely($file_url) {
-	
-		/**
-		 * Get headers from remote server
-		 */
-		$file_headers = get_headers($file_url);
+	static public function writeContentToFile($file_name, $data) {
 
-		/**
-		 * If header is 404 then return false else return true 
-		 */
-		if($file_headers[0] == 'HTTP/1.1 404 Not Found') {
-			return false;
-		} else {
+		if (isset($file_name) and isset($data)) {
+		
+			$file_open = fopen($file_name, "w+");
+
+			$file_write = fwrite($file_open, $data);
+
+			$file_close = fclose($file_open);
+			
 			return true;
-		}  
+			
+		} else {
+			return false;
+		}
 	}
+
+	/**
+	 * readContentFromFile
+	 * 
+	 * This function read content from file
+	 *
+	 * @param string $file_name
+	 * @return string / boolean
+	 */
+	static public function readContentFromFile($file_name) {
+		
+		if (isset($file_name) and !empty($file_name)) {
+		
+			$file_open = fopen($file_name, "rb");
+
+			$content = fread($file_open, filesize($file_name));
+
+			$file_close = fclose($file_open);
+			
+			return $content;
+			
+		} else {
+			return false;
+		}
+	}
+
 	/**
 	 * Destructor
 	 *

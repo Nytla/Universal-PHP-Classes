@@ -69,5 +69,25 @@ if (FilesWork::fileExistsRemotely($file_url)) {
 /**
  * Download file
  */
-FilesWork::forceDownloadFile($file_name);
+//FilesWork::forceDownloadFile($file_name);
+
+/**
+ * Set variable with path to file
+ */
+$file_name = dirname(__FILE__) . '/example.txt';
+
+/**
+ * Set variable with example text
+ */
+$data = 'This is example test data' . "\r\n" . ' and two row.';
+
+/**
+ * Write text in file
+ */
+//var_dump(FilesWork::writeContentToFile($file_name, $data));
+
+/**
+ * Read text from file
+ */
+echo FilesWork::readContentFromFile($file_name);
 ?>

@@ -85,6 +85,43 @@ final class URLWork {
 	}
 
 	/**
+	 * parseUrlParams
+	 * 
+	 * This function parse url params
+	 *
+	 * @param string $url_params
+	 * @param string $equals
+	 * @param string $separator
+	 * 
+	 * @return string / boolean
+	 */
+	static public function parseUrlParams($url_params, $equals, $separator) {
+		
+		if (isset($url_params) and !empty($url_params)) {
+		
+			$elements_array = explode($separator, $url_params);
+			
+			if (is_array($elements_array)) {
+				
+				foreach ($elements_array as $key => $value) {
+					
+					$array_params = explode($equals, $value);
+					
+					if (isset($array_params[0]) and isset($array_params[1])) {
+					
+						$params_array[$array_params[0]] = $array_params[1];
+					}
+				}
+				
+				return $params_array;
+			}
+			
+		} else {
+			return false;
+		}
+	}
+	
+	/**
 	 * Destructor
 	 *
 	 * This function is destructor

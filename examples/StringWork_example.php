@@ -101,5 +101,90 @@ $flag = 0;
 /**
  * Decrypt password
  */
-print StringWork::encryptOrDecryptString($key, StringWork::encryptOrDecryptString($key, $password, $flag), 1);
+//print StringWork::encryptOrDecryptString($key, StringWork::encryptOrDecryptString($key, $password, $flag), 1);
+
+/**
+ * Create variable with post code states
+ */
+$post_code_states = 'NY';
+
+/**
+ * Print name of states
+ */
+//echo StringWork::getStatesUSA($post_code_states);
+
+/**
+ * Create variable with example string
+ */
+$string = 'This is example text.';
+
+/**
+ * Create vriable with charaset
+ */
+$charaset = 'UTF-8';
+
+/**
+ * Pring text in our charaset
+ */
+//echo StringWork::setCorrectEncoding($string, $charset);
+
+/**
+ * Set variable with string length
+ */
+$cap = 7;
+
+/**
+ * Print generate random string
+ */
+//echo StringWork::mostCommonWords($long_text, $cap);
+
+/**
+ * Set variable with text from
+ */
+$start = 'dummy';
+
+/**
+ * Set variable with text end
+ */
+$end = 'industry';
+
+/**
+ * Print our text from start text and text end
+ */
+//echo StringWork::extractString($start, $end, $long_text);
+
+/**
+ * Print our text with srart text and text end
+ */
+//echo StringWork::extractString($start, $end, $long_text, true);
+
+/**
+ * Create xml string
+ */
+$xml_string = '
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Example Feed</title>
+    <subtitle>A subtitle.</subtitle>
+    <link href="http://example.org/feed/" rel="self" />
+    <link href="http://example.org/" />
+    <id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+    <updated>2003-12-13T18:30:02Z</updated>
+</feed>
+';
+
+/**
+ * Print string in which escape xml crars 
+ */
+//echo StringWork::escapeXmlChars($xml_string);
+
+/**
+ * Print string in which remove all symbols
+ */
+//echo StringWork::removeAllSymbols($long_text);
+
+/**
+ * Print string in which remove top 100 words
+ */
+echo StringWork::removeTopWords100($long_text);
 ?>
