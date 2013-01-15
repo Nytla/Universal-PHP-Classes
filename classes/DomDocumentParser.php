@@ -10,7 +10,7 @@
  */
 
 /**
- * Cookie
+ * DomDocumentParser
  * 
  * This class work with DomDocument class
  * 
