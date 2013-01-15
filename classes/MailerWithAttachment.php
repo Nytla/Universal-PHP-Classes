@@ -1,18 +1,18 @@
 <?php
 /**
- * FilesWork.php
+ * MailerWithAttachment.php
  *
- * This is file with AutoloadClass class
+ * This is file with MailerWithAttachment class
  * 
  * @category	classes
- * @copyright	2012
+ * @copyright	2013
  * @author		Igor Zhabskiy <Zhabskiy.Igor@gmail.com>
  */
 
 /**
- * AutoloadClass
+ * MailerWithAttachment
  * 
- * This class to autoload other class
+ * This class to send email with attachment
  * 
  * @version 0.1
  */
