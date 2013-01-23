@@ -58,7 +58,7 @@ final class ImageResizer {
 	 * 
 	 * @var string	This is destination image path
 	 */
-	private $_destination_image_path = './../examples/upload_images/';
+	private $_destination_image_path = './../upload_images/';
 
 	/**
 	 * _image_quality
@@ -127,19 +127,19 @@ final class ImageResizer {
 
 			case 'image/png':
 
-				$created_image = imagecreatefrompng($_FILES['image_file']['tmp_name']);
+				$created_image = imagecreatefrompng($temp_src);
 
 				break;
 
 			case 'image/gif':
 
-				$created_image = imagecreatefromgif($_FILES['image_file']['tmp_name']);
+				$created_image = imagecreatefromgif($temp_src);
 
 				break;
 
 			case 'image/jpeg':
 
-				$created_image = imagecreatefromjpeg($_FILES['image_file']['tmp_name']);
+				$created_image = imagecreatefromjpeg($temp_src);
 
 				break;
 

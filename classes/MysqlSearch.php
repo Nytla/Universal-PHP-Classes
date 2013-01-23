@@ -15,6 +15,8 @@
  * This class search in row of mysql table
  *
  * @version 1.0
+ * 
+ * @link http://code.activestate.com/recipes/125901-php-mysql-search-class/
  */
 final class MysqlSearch {
 
@@ -224,33 +226,4 @@ final class MysqlSearch {
 		mysql_close($this -> _db_connect);
 	}
 }
-
-###################################################################
-#http://code.activestate.com/recipes/125901-php-mysql-search-class/
-#
-# -=[ MySQL Search Class ]=- 
-#
-#      version 1.5
-#
-# (c) 2002 Stephen Bartholomew
-#
-# Functionality to search through a MySQL database, across
-# all columns, for multiple keywords
-#
-# Usage:
-#
-#    Required:
-#        $mysearch = new MysqlSearch;
-#        $mysearch->setIdentifier("MyPrimaryKey");
-#        $mysearch->setTable("MyTable");
-#        $results_array = $mysearch->find($mysearchterms);
-#
-#    Optional:
-#        This will force the columns that are searched
-#        $mysearch->setSearchColumns("Name, Description");
-#
-#             Set the ORDER BY attribute for SQL query
-#            $mysearch->setorderby("Name"); 
-#
-###################################################################
 ?>

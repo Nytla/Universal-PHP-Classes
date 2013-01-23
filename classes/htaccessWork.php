@@ -15,11 +15,12 @@
  * This class to work with htaccess
  * 
  * @version 0.1
+ * 
+ * @link http://net.tutsplus.com/tutorials/apache-aliasing-and-redirection/
+ * @link http://www.saaraan.com/category/tutorial/page/5
+ * @link http://www.saaraan.com/2011/01/301-redirect-htaccess-examples
+ * @link http://www.saaraan.com/2012/01/htacess-redirect-from-subdomain-to-full-url
+ * @link http://habrahabr.ru/post/165701/
  */
-final class htaccessWork {
-	//http://net.tutsplus.com/tutorials/apache-aliasing-and-redirection/
-	//www.saaraan.com/category/tutorial/page/5
-	//www.saaraan.com/2011/01/301-redirect-htaccess-examples
-	//www.saaraan.com/2012/01/htacess-redirect-from-subdomain-to-full-url
-	//http://habrahabr.ru/post/165701/
-}
+final class htaccessWork {}
+?>

@@ -46,8 +46,9 @@ final class AutoloadClass {
 		 */
 		$paths = array(
 			$root . '/../classes/' . $class_name . '.php',
-//			$root . '/../application/controllers/' . $class_name . '.php',
-//			$root . '/../application/models/' . $class_name . '.php',			
+			//Example
+//			$root . '/../app/controllers/' . $class_name . '.php',
+//			$root . '/../app/models/' . $class_name . '.php',			
 		);
 
 		/**

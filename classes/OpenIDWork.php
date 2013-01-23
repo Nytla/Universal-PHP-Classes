@@ -15,15 +15,14 @@
  * This class to work with opnen id
  * 
  * @version 0.1
+ * 
+ * @link https://github.com/openid/php-openid (Library)
+ * @link http://openid.net/
+ * @link https://www.myopenid.com/signup
+ * @link http://gluek.info/2009/03/13/openid-dlya-svoego-bloga-ispolzuya-google-account/
+ * @link http://axiger.livejournal.com/7846.html
+ * @link http://oneid.ru/info/openid-php/
+ * @link http://habrahabr.ru/post/109700/
  */
-final class OpenIDWork {
-	//https://github.com/openid/php-openid
-	
-	//https://www.myopenid.com/signup
-	//http://gluek.info/2009/03/13/openid-dlya-svoego-bloga-ispolzuya-google-account/
-	//http://openid.net/
-	//http://www.dreamincode.net/forums/topic/247188-user-authentication-class/
-	//http://axiger.livejournal.com/7846.html
-	//http://oneid.ru/info/openid-php/
-	//http://habrahabr.ru/post/109700/
-}
+final class OpenIDWork {}
+?>
