@@ -390,14 +390,14 @@ final class StringWork {
 	/**
 	 * extractString
 	 * 
-	 * Enter description here...
+	 * This funciton extract text from start text and text end from string
 	 *
-	 * @param unknown_type $start
-	 * @param unknown_type $end
-	 * @param unknown_type $str
-	 * @param unknown_type $include_flags
+	 * @param string $start
+	 * @param string $end
+	 * @param string $str
+	 * @param boolean $include_flags
 	 * 
-	 * @return unknown
+	 * @return string
 	 */
 	static public function extractString($start, $end, $str, $include_flags = false) {
 		
@@ -474,6 +474,48 @@ final class StringWork {
 		return $new_string;
 	}
 
+	/**
+	 * ru2lat
+	 * 
+	 * This function to convert cyrillic to latin in PHP
+	 * 
+	 * @param string $string
+	 * @return string $latin
+	 */
+	function russianToLatin($string) {
+
+		/**
+		 * Set array with all cyrillic symbols
+		 */
+		$symbols_array = array(
+			"А"=>"a", "Б"=>"b", "В"=>"v", "Г"=>"g", "Д"=>"d",
+			"Е"=>"e", "Ё"=>"yo", "Ж"=>"zh", "З"=>"z", "И"=>"i", 
+			"Й"=>"j", "К"=>"k", "Л"=>"l", "М"=>"m", "Н"=>"n", 
+			"О"=>"o", "П"=>"p", "Р"=>"r", "С"=>"s", "Т"=>"t", 
+			"У"=>"u", "Ф"=>"f", "Х"=>"kh", "Ц"=>"ts", "Ч"=>"ch", 
+			"Ш"=>"sh", "Щ"=>"sch", "Ъ"=>"", "Ы"=>"y", "Ь"=>"", 
+			"Э"=>"e", "Ю"=>"yu", "Я"=>"ya", "а"=>"a", "б"=>"b", 
+			"в"=>"v", "г"=>"g", "д"=>"d", "е"=>"e", "ё"=>"yo", 
+			"ж"=>"zh", "з"=>"z", "и"=>"i", "й"=>"j", "к"=>"k", 
+			"л"=>"l", "м"=>"m", "н"=>"n", "о"=>"o", "п"=>"p", 
+			"р"=>"r", "с"=>"s", "т"=>"t", "у"=>"u", "ф"=>"f", 
+			"х"=>"kh", "ц"=>"ts", "ч"=>"ch", "ш"=>"sh", "щ"=>"sch", 
+			"ъ"=>"", "ы"=>"y", "ь"=>"", "э"=>"e", "ю"=>"yu", 
+			"я"=>"ya", " "=>"-", "."=>"", ","=>"", "/"=>"-",  
+			":"=>"", ";"=>"","—"=>"", "–"=>"-", "”"=>"", "“"=>""
+		);
+
+		/**
+		 * Replace the cyrillic symbols in the latin symbols
+		 */
+		$latin = strtr($string, $symbols_array);
+
+		/**
+		 * Return a lowercase latin string
+		 */
+		return $latin;
+	}
+	
 	/**
 	 * Destructor
 	 *

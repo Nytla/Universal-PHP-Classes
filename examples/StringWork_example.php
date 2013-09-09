@@ -186,5 +186,15 @@ $xml_string = '
 /**
  * Print string in which remove top 100 words
  */
-echo StringWork::removeTopWords100($long_text);
+//echo StringWork::removeTopWords100($long_text);
+
+/**
+ * Create string with russian text  
+ */
+$string = 'Это текст для теста.';
+
+/**
+ * Print in latin
+ */
+echo StringWork::russianToLatin($string);
 ?>
